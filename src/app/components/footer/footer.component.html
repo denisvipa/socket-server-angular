@@ -1,0 +1,5 @@
+<footer class="p-2 bg-dark text-white text-right">
+    Estado del Servidor: 
+    <span *ngIf="wsService.socketStatus" class="text-success">En Linea</span>
+    <span *ngIf="!wsService.socketStatus" class="text-danger">Fuera de Linea</span>
+</footer>
